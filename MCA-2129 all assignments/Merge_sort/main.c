@@ -16,15 +16,17 @@ int main() {
     }
 
     printf("Enter the elements:\n");
-    for (int i = 0; i < n; i++) {
+    int i;
+    for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     mergeSort(arr, 0, n - 1);
 
     printf("Sorted array: ");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+    int j;
+    for (j = 0; j < n; j++) {
+        printf("%d ", arr[j]);
     }
     printf("\n");
 
